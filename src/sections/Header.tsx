@@ -3,16 +3,16 @@ import MenuIcon from "@/assets/icon-menu.svg";
 
 export const Header = () => {
   return (
-    <header className="py-4 border-b border-white/15">
+    <header className="py-4 border-b border-white/15 md:border-none">
       <div className="container">
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center md:border border-white/15 md:p-2.5 rounded-xl max-w-2xl mx-auto">
           <div className="h-10 w-10 border rounded-lg inline-flex justify-center items-center border-white/15">
             <div className="h-8 w-8">
               <LogoIcon classname="h-8 w-8" />
             </div>
           </div>
-          <div>
-            <nav>
+          <div className="hidden md:block">
+            <nav className="flex gap-8 text-sm">
               <a href="#" className="flex gap-8 text-white/70 hover:text-white transition">Features</a>
               <a href="#" className="flex gap-8 text-white/70 hover:text-white transition">Developers</a>
               <a href="#" className="flex gap-8 text-white/70 hover:text-white transition">Pricing</a>
@@ -28,7 +28,7 @@ export const Header = () => {
               </div>
               <span>Join waitlist</span>
             </button>
-            <MenuIcon />
+            <MenuIcon className="md:hidden"/>
           </div>
         </div>
       </div>
