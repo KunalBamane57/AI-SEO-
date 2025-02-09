@@ -8,7 +8,7 @@ export const Header = () => {
         <div className="flex justify-between items-center">
           <div className="h-10 w-10 border rounded-lg inline-flex justify-center items-center border-white/15">
             <div className="h-8 w-8">
-              <LogoIcon classname="h-8 w-8" />
+              <LogoIcon classname="h-8 w-8"/>
             </div>
           </div>
           <div>
